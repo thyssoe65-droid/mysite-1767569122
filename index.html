@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Dijo - Restaurant Semi-Gastronomique à La Rochelle</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-black text-white font-sans">
+    <custom-navbar></custom-navbar>
+<!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/40 z-10"></div>
+        <div class="absolute inset-0">
+            <img src="http://static.photos/restaurant/1200x630/1" alt="Le Dijo Restaurant" class="w-full h-full object-cover opacity-70">
+        </div>
+        <div class="relative z-20 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-light mb-6 tracking-wider animate-fade-in">LE DIJO</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 tracking-widest animate-slide-up">RESTAURANT SEMI-GASTRONOMIQUE</p>
+            <p class="text-lg md:text-xl mb-12 max-w-2xl mx-auto animate-fade-in-delay">Une expérience culinaire qui évolue au rythme des saisons au cœur de La Rochelle</p>
+            <div class="flex gap-6 justify-center animate-slide-up-delay">
+                <a href="#carte" class="bg-white text-black px-8 py-3 font-light tracking-widest hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">DÉCOUVRIR LA CARTE</a>
+                <a href="#reservation" class="border border-white px-8 py-3 font-light tracking-widest hover:bg-white/10 transition-all duration-300 transform hover:scale-105">RÉSERVER</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <i data-feather="chevron-down" class="text-white"></i>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="carte" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-light mb-4 tracking-widest">CARTE D'HIVER</h2>
+                <div class="w-24 h-px bg-white mx-auto mb-4"></div>
+                <p class="text-gray-300 text-lg">Une sélection de mets raffinés qui célèbrent les saveurs de la saison</p>
+            </div>
+
+            <!-- Entrées -->
+            <div class="max-w-4xl mx-auto mb-16">
+                <h3 class="text-2xl font-light mb-8 tracking-widest text-center border-b border-gray-700 pb-4">ENTRÉES</h3>
+                <div class="space-y-8">
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Saint-Jacques juste saisie</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">crème de chou-fleur au chocolat blanc, poudre de citron noir</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Foie gras marbré cacao-cognac</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">condiment prunes maturées</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Variation de champignons</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">sabayon miso-vin jaune, condiment herbacé</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plats -->
+            <div class="max-w-4xl mx-auto mb-16">
+                <h3 class="text-2xl font-light mb-8 tracking-widest text-center border-b border-gray-700 pb-4">PLATS</h3>
+                <div class="space-y-8">
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Bar sauvage</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">champignons boutons au beurre de café, caramel d'échalotes, croûtons</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Filet de pintade</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">praliné noisette, jus corsé, sauce poulette, chou pakchoï rôti, purée de panais</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Coquillettes truffées</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">râpée de vieux comté, huile de ciboulette</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-2xl font-light mb-8 tracking-widest text-center border-b border-gray-700 pb-4">DESSERTS</h3>
+                <div class="space-y-8">
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Sélection de fromages</h4>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Crème de céleri rave à la vanille</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">segments d'agrumes, financier vanille, streusel d'amandes</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                    <div class="menu-item group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-xl font-light mb-2">Crémeux chocolat au lait & cèpes</h4>
+                                <p class="text-gray-300 text-sm leading-relaxed">biscuit noisettes-cèpes, gel de genièvre, crumble au grué de cacao</p>
+                            </div>
+                            <span class="text-lg font-light ml-4">€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horaires Section -->
+    <section id="horaires" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-light mb-4 tracking-widest">HORAIRES</h2>
+                <div class="w-24 h-px bg-white mx-auto mb-4"></div>
+            </div>
+            
+            <div class="max-w-md mx-auto bg-black/50 backdrop-blur-sm p-8 rounded-lg border border-gray-700">
+                <div class="space-y-4 text-center">
+                    <div class="text-red-400 font-light mb-4 p-3 bg-red-900/20 border border-red-400/30 rounded">
+                            <i data-feather="alert-triangle" class="inline w-4 h-4 mr-2"></i>
+                            Fermeture exceptionnelle du 15 au 25 janvier 2026
+                        </div>
+                    <div class="flex justify-between items-center py-2 border-b border-gray-700">
+                        <span class="font-light">Lundi</span>
+                        <span class="text-red-400 font-light">Fermé</span>
+                    </div>
+<div class="flex justify-between items-center py-2 border-b border-gray-700">
+                        <span class="font-light">Mardi</span>
+                        <span class="font-light">19h30 - 21h30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-gray-700">
+                        <span class="font-light">Mercredi</span>
+                        <span class="font-light">12h00 - 13h30 • 19h30 - 21h30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-gray-700">
+                        <span class="font-light">Jeudi</span>
+                        <span class="font-light">12h00 - 13h30 • 19h30 - 21h30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-gray-700">
+                        <span class="font-light">Vendredi</span>
+                        <span class="font-light">12h00 - 13h30 • 19h30 - 21h30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2 border-b border-gray-700">
+                        <span class="font-light">Samedi</span>
+                        <span class="font-light">12h00 - 13h30 • 19h30 - 21h30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2">
+                        <span class="font-light">Dimanche</span>
+                        <span class="text-red-400 font-light">Fermé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-light mb-8 tracking-widest">RÉSERVER VOTRE TABLE</h2>
+                <p class="text-gray-300 mb-12 text-lg">Vivez une expérience gastronomique unique au cœur de La Rochelle</p>
+                <a href="tel:+33656870175" class="bg-white text-black px-12 py-4 font-light tracking-widest text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block">
+                    <i data-feather="phone" class="inline mr-2 w-5 h-5"></i>
+                    NOUS APPELER
+                </a>
+</div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+<script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
